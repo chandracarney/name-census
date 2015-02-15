@@ -4,9 +4,9 @@ class CreateCensus < ActiveRecord::Migration
       t.timestamps null: false
 
       t.integer :year, null: false, default: ""
-      t.string  :name, null: false, default: ""
-      t.string  :gender, null: false, default: ""
-      t.string  :occurrences, null: false, default: ""
+      t.string :name, null: false, default: ""
+      t.string :gender, null: false, default: ""
+      t.string :occurrences, null: false, default: ""
     end
   end
 end
