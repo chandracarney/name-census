@@ -19,10 +19,10 @@ ActiveRecord::Schema.define(version: 20150215202101) do
   create_table "census", force: :cascade do |t|
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
-    t.integer  "year",                     null: false
+    t.string   "year",        default: "", null: false
     t.string   "name",        default: "", null: false
     t.string   "gender",      default: "", null: false
-    t.string   "occurrences", default: "", null: false
+    t.integer  "occurrences",              null: false
   end
 
 end
