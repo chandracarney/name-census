@@ -16,6 +16,7 @@ gem 'unicorn'
 gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  gem 'capybara'
   gem 'rspec-rails'
   gem 'byebug'
   gem 'web-console', '~> 2.0'

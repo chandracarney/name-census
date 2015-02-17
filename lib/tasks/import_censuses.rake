@@ -8,6 +8,7 @@ task :import_censuses => :environment do
     year = year_match[1]
     File.readlines(file).map(&:chomp).each do |line|
       name, gender, occurrences = line.split(",")
+      Census.create!(name:name, year:year, gender:gender, occurrences:occurrences.to_i)
       puts occurrences.inspect
       puts "#{year}, #{name}, #{gender}, #{occurrences.to_i}"
     end
