@@ -16,6 +16,9 @@ This application uses and is working to visualize the public [Social Security da
 * Bundle install:  
 `$ bundle install`
 
+* Setup the database:
+`$ rake db:setup`
+
 ## Running the tests
 
 * Run the tests with rspec:  
